@@ -32,7 +32,7 @@ get '/result' do
 	num1 = params[:num1]
 	num2 = params[:num2]
 	# op = params[:op]
-	result_add = add(num1,num2)
+	result_add = add(num1.to_i,num2.to_i)
 	result_subtract = subtract(num1.to_i,num2.to_i)
 	result_multiply = multiply(num1.to_i,num2.to_i)
 	result_divide = divide(num1.to_i,num2.to_i)
