@@ -17,21 +17,9 @@ post '/secondnum' do
 	num2 = params[:num2]
 	redirect 'result?num1=' + num1 + '&num2=' + num2
 end
-# get '/math' do
-# 	num1 = params[:num1]
-# 	num2 = params[:num2]
-# 	erb :operator, locals: {num1: num1, num2: num2}
-# end
-# post '/math_do' do
-# 	num1 = params[:num1]
-# 	num2 = params[:num2]
-# 	op = params[:op]
-# 	redirect 'result?num1=' + num1 + '&num2=' + num2 +'&op=' + op
-# end
 get '/result' do
 	num1 = params[:num1]
 	num2 = params[:num2]
-	# op = params[:op]
 	result_add = add(num1.to_i,num2.to_i)
 	result_subtract = subtract(num1.to_i,num2.to_i)
 	result_multiply = multiply(num1.to_i,num2.to_i)
