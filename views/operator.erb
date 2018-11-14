@@ -2,8 +2,8 @@ First Number: <%= num1 %>. Second number: <%= num2 %>.
 Input an operator. (+, -, *, /)
 
 <form method = 'post' action = '/math_do'>
-  Second Number: <input type="number" name="num2"><br>
+  Operator: <input type="text" name="op"><br>
   <input type = "hidden" name = "num1" value = "<%= num1 %>">
-  <input type = "hidden" name = "num2" value = "<%= num3 %>">
+  <input type = "hidden" name = "num2" value = "<%= num2 %>">
   <input type="submit" value="Submit">
 </form>

@@ -13,7 +13,8 @@ get '/num2' do
 	erb :input2, locals: {num1: num1}
 end
 post '/secondnum' do
-
+	num1 = params[:num1]
+	num2 = params[:num2]
 	redirect 'math?num1=' + num1 + '&num2=' + num2
 end
 get '/math' do
