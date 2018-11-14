@@ -16,7 +16,7 @@ post '/secondnum' do
 	num1 = params[:num1]
 	num2 = params[:num2]
 	redirect 'result?num1=' + num1 + '&num2=' + num2
-# end
+end
 # get '/math' do
 # 	num1 = params[:num1]
 # 	num2 = params[:num2]
