@@ -1,0 +1,8 @@
+Equation: <%= num1 %> <% op %> <%= num2%>
+
+<form method = 'post' action = '/math_do'>
+  <input type="hidden" name= "op" value = "<%= op %>">
+  <input type = "hidden" name = "num1" value = "<%= num1 %>">
+  <input type = "hidden" name = "num2" value = "<%= num2 %>">
+  <input type="submit" value="Submit">
+</form>

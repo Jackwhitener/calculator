@@ -22,3 +22,15 @@ get '/math' do
 	num2 = params[:num2]
 	erb :operator, locals: {num1: num1, num2: num2}
 end
+post '/math_do' do
+	num1 = params[:num1]
+	num2 = params[:num2]
+	op = params[:op]
+	redirect 'result?num1=' + num1 + '&num2' + num2 +'&op=' + op
+end
+get '/result' do
+	num1 = params[:num1]
+	num2 = params[:num2]
+	op = params[:op]
+	erb :result, locals: {num1: num1, num2: num2, op: op}
+end
