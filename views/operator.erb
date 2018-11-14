@@ -1,9 +1,12 @@
-<!-- First Number: <%= num1 %>. Second number: <%= num2 %>.
-Input an operator. (+, -, *, /)
+First Number: <%= num1 %>. Second number: <%= num2 %>.
+Select an operator.
 
-<form method = 'post' action = '/math_do'>
-  Operator: <input type="text" name="op"><br>
-  <input type = "hidden" name = "num1" value = "<%= num1 %>">
-  <input type = "hidden" name = "num2" value = "<%= num2 %>">
-  <input type="submit" value="Submit">
-</form> -->
+<form method = 'post' action = '/oper_ator'>
+Add: <input type = 'radio' name = 'op' value = 'add' checked> <br>
+Subtract: <input type = "radio" name = 'op' value = '-'> <br>
+Multiply: <input type = 'radio' name = 'op' value = '*'> <br>
+Divide: <input type = 'radio' name = 'op' value = '/'> <br>
+<input type = "hidden" name = "num1" value = "<%= num1 %>">
+<input type = "hidden" name = "num2" value = "<%= num2 %>">
+<input type="submit" value="Submit">
+</form>
