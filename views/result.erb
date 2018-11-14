@@ -1,8 +1,10 @@
-Equation: <%= num1 %> <% op %> <%= num2%>
-
+<!-- Equation: <%= num1 %> <%= op %> <%= num2 %> -->
+Numbers added: <%= num1 %> + <%= num2 %> = <%= result_add %>
+Numbers subtracted: <%= num1 %> - <%= num2 %> = <%= result_subtract %>
+Numbers multiplied: <%= num1 %> * <%= num2 %> = <%= result_multiply %>
+Numbers divided: <%= num1 %> - <%= num2 %> = <%= result_divide %>
 <form method = 'post' action = '/math_do'>
-  <input type="hidden" name= "op" value = "<%= op %>">
+  <!-- <input type="hidden" name= "op" value = "<%= op %>"> -->
   <input type = "hidden" name = "num1" value = "<%= num1 %>">
   <input type = "hidden" name = "num2" value = "<%= num2 %>">
-  <input type="submit" value="Submit">
 </form>
