@@ -33,8 +33,8 @@ get '/result' do
 	num2 = params[:num2]
 	# op = params[:op]
 	result_add = add(num1,num2)
-	result_subtract = subtract(num1,num2)
-	result_multiply = multiply(num1,num2)
-	result_divide = divide(num1,num2)
+	result_subtract = subtract(num1.to_i,num2.to_i)
+	result_multiply = multiply(num1.to_i,num2.to_i)
+	result_divide = divide(num1.to_i,num2.to_i)
 	erb :result, locals: {num1: num1, num2: num2, result_add: result_add, result_subtract: result_subtract, result_multiply: result_multiply, result_divide: result_divide}
 end
